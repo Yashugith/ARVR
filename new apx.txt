@@ -86,10 +86,8 @@ public CharacterController controller;
 private Vector3 moveDirection; 
 void Update() 
 { 
-f
- loat moveX = Input.GetAxis("Horizontal");   
-f
- loat moveZ = Input.GetAxis("Vertical");    
+float moveX = Input.GetAxis("Horizontal");   
+float moveZ = Input.GetAxis("Vertical");    
 // Calculate movement direction based on input 
 moveDirection = new Vector3(moveX, 0f, moveZ); 
 if (moveDirection.magnitude > 0) 

@@ -212,6 +212,28 @@ sphere>
 </body> 
 </html> 
 
+or
+
+<!doctype html> 
+<html> 
+<head> 
+<title>A-Frame Geolocation</title> 
+ 
+<script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script> 
+<script> 
+document.addEventListener('DOMContentLoaded', function() { 
+}); 
+</script> 
+</head> 
+<body><h3 id="currentLocation">Fetching location...</h3> 
+<a-scene>
+  <a-box id="box" position="0 0.5 -3" rotation="0 45 0" color="red" visible="true"></a-box> 
+  <a-sphere id="sphere" position="-2 0.75 -3" radius="0.75" color="green" visible="true"></a-sphere> 
+  <a-camera gps-camera rotation-reader></a-camera> 
+</a-scene> 
+</body> 
+</html>
+
 8.index.html
 
 <!DOCTYPE html> 
